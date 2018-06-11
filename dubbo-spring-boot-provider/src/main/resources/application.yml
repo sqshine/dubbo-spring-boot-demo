@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: dubbo-spring-boot-provider
+server:
+  port: 8090
+
+dubbo:
+  application:
+    name: dubbo-spring-boot-provider
+    id: dubbo-spring-boot-provider
+    qos-enable: false
+  registry:
+    id: my-register
+    protocol: zookeeper
+    address: 192.168.3.124:2181
+    client: curator
+    timeout: 30000
+# @DubboComponentScan\u52A0\u5728\u4E3B\u7C7BDubboProviderApplication\u4E0A\uFF0C\u5219\u53EF\u4EE5\u4E0D\u914D\u7F6Edubbo.scan.basePackages
+#  scan:
+#    base-packages: com.sqshine.dubbo.provider.service
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 20081
+    status: server
+    threads: 10
+  provider:
+    client: netty4
+
+demo:
+  service:
+    version: 1.0.0
+
+
