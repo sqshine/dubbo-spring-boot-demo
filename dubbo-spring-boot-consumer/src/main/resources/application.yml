@@ -13,11 +13,11 @@ dubbo:
   application:
     name: dubbo-spring-boot-consumer
     id: dubbo-spring-boot-consumer
-  protocol:
-    id: dubbo
-    name: dubbo
-    port: 20080
-    threads: 10
+#  protocol:
+#    id: dubbo
+#    name: dubbo
+#    port: 20080
+#    threads: 10
   registry:
       id: my-register
       address: 192.168.3.124:2181
