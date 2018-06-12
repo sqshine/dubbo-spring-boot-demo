@@ -9,7 +9,7 @@ import org.springframework.boot.builder.SpringApplicationBuilder;
  * @author sqshine
  */
 @SpringBootApplication
-@DubboComponentScan
+@DubboComponentScan("com.sqshine.dubbo.provider.service")
 public class DubboProviderApplication {
 
     public static void main(String[] args) {

@@ -1,8 +1,6 @@
 spring:
   application:
     name: dubbo-spring-boot-provider
-server:
-  port: 8090
 
 dubbo:
   application:
