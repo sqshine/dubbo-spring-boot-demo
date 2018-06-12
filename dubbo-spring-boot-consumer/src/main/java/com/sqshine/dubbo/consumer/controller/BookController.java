@@ -20,7 +20,7 @@ public class BookController {
     private IBookService bookService;
 
     @GetMapping
-    public Book sayHello(@RequestParam String name) {
+    public Book findBook(@RequestParam("name") String name) {
         return bookService.findBook(name);
     }
 

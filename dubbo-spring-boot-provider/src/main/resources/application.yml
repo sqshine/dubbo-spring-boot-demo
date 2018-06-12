@@ -19,11 +19,12 @@ dubbo:
   protocol:
     id: dubbo
     name: dubbo
-    port: 20081
+    port: 20080
     status: server
     threads: 10
-  provider:
-    client: netty4
+    server: netty4
+#  provider:
+#    server: netty4
 
 demo:
   service:

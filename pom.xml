@@ -82,11 +82,11 @@
                 <configuration>
                     <tagNameFormat>v-@{project.version}</tagNameFormat>
                     <autoVersionSubmodules>true</autoVersionSubmodules>
-                    <reactorProjects>
+                    <!--<reactorProjects>
                         <reactorProject>dubbo-spring-boot-api</reactorProject>
                         <reactorProject>dubbo-spring-boot-provider</reactorProject>
                         <reactorProject>dubbo-spring-boot-consumer</reactorProject>
-                    </reactorProjects>
+                    </reactorProjects>-->
                 </configuration>
             </plugin>
         </plugins>
