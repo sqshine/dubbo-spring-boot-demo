@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author sqshine
  */
 @SpringBootApplication
-@DubboComponentScan
+//@DubboComponentScan
 public class DubboConsumerApplication {
 
     public static void main(String[] args) {

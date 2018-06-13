@@ -7,7 +7,7 @@ server:
 
 demo:
   service:
-    version: 1.0.0
+    version: 1.0
 
 dubbo:
   application:
@@ -27,6 +27,6 @@ dubbo:
   consumer:
     client: netty4
 
-management:
-  server:
-    port: 8081
+#management:
+#  server:
+#    port: 8081
