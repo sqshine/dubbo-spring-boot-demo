@@ -18,6 +18,7 @@
     </parent>
 
     <properties>
+        <docker.image.prefix>dubbo-springboot</docker.image.prefix>
     </properties>
 
     <dependencies>
@@ -62,6 +63,23 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <!-- Docker maven plugin -->
+            <plugin>
+                <groupId>com.spotify</groupId>
+                <artifactId>docker-maven-plugin</artifactId>
+                <version>1.1.1</version>
+                <configuration>
+                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>
+                    <dockerDirectory>src/main/docker</dockerDirectory>
+                    <resources>
+                        <resource>
+                            <targetPath>/</targetPath>
+                            <directory>${project.build.directory}</directory>
+                            <include>${project.artifactId}-${project.version}.jar</include>
+                        </resource>
+                    </resources>
+                </configuration>
             </plugin>
         </plugins>
     </build>

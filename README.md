@@ -48,3 +48,8 @@ application.properties配置
 ```
 参见application.yml文件
 ```
+
+### 生产docker iamge
+```
+mvn package docker:build 
+```
