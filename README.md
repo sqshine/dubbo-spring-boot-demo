@@ -51,5 +51,8 @@ application.properties配置
 
 ### 生产docker iamge
 ```
-mvn package docker:build 
+mvn clean package docker:build -Dmaven.test.skip=true
+
+执行docker provider注册
+docker run -d -e DUBBO_IP_TO_REGISTRY=192.168.30.xxx -e DUBBO_PORT_TO_REGISTRY=20880 dubbo-springboot/dubbo-spring-boot-provider
 ```
