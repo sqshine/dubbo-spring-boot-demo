@@ -53,6 +53,6 @@ application.properties配置
 ```
 mvn clean package docker:build -Dmaven.test.skip=true
 
-执行docker provider注册
-docker run -d -e DUBBO_IP_TO_REGISTRY=192.168.30.xxx -e DUBBO_PORT_TO_REGISTRY=20880 dubbo-springboot/dubbo-spring-boot-provider
+执行docker provider注册,-p端口和DUBBO_PORT_TO_REGISTRY的端口同时要改变
+docker run -d -p 20880:20880 -e DUBBO_IP_TO_REGISTRY=192.168.30.197 -e DUBBO_PORT_TO_REGISTRY=20880 dubbo-springboot/dubbo-spring-boot-provider
 ```
