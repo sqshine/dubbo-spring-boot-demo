@@ -23,7 +23,7 @@ import com.sqshine.dubbo.api.service.IBookService;
  * @since 1.0.0
  */
 @Service(
-        version = "${demo.service.version}",
+        version = "1.0",
         application = "${dubbo.application.id}",
         protocol = "${dubbo.protocol.id}",
         registry = "${dubbo.registry.id}")

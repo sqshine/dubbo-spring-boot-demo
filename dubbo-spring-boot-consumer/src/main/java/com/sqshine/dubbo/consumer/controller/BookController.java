@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/book")
 public class BookController {
 
-    @Reference(version = "${demo.service.version}",
+    @Reference(version = "1.0",
             application = "${dubbo.application.id}")
     private IBookService bookService;
 

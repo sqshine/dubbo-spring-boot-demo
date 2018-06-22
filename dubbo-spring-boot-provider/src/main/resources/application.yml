@@ -28,8 +28,4 @@ dubbo:
 #  provider:
 #    server: netty4
 
-demo:
-  service:
-    version: 1.0
-
 
