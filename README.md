@@ -17,6 +17,8 @@ mvn clean install -DskipTests -Drat.skip=true
 如果不想下载打包也行，直接用官方的包，不过官方只提供了0.1.0版本的包，只能兼容Spring Boot 1.5.x的版本
 为了使用Spring boot 2.0.x版本，需要mvn install使用0.2.0-SNAPSHOT版本
 
+官方已发布0.2.0正式版，可以直接使用
+
 ```
 官方版本
 <dependency>
