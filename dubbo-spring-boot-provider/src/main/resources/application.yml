@@ -12,20 +12,21 @@ dubbo:
   registry:
     id: my-register
     protocol: zookeeper
-    address: 192.168.3.124:2181
+    address: 10.250.251.156:2181
     client: curator
     timeout: 30000
 # @DubboComponentScan\u52A0\u5728\u4E3B\u7C7BDubboProviderApplication\u4E0A\uFF0C\u5219\u53EF\u4EE5\u4E0D\u914D\u7F6Edubbo.scan.basePackages
 #  scan:
-#    base-packages: com.sqshine.dubbo.provider.service
+#    basePackages: com.sqshine.dubbo.provider.service
   protocol:
     id: dubbo
     name: dubbo
-    port: 20880
+    port: -1
     status: server
     threads: 10
     server: netty4
 #  provider:
 #    server: netty4
+
 
 
